@@ -5,21 +5,16 @@
       "mainDataBase": "mongoDb",
       "secondaryDataStore": "redis"
     },
-    "dataStores": {
-      "redis": {
-        "host": "localhost",
-        "port": 7070,
-        "password": null,
-        "keyPrefix": "ru102js"
-      }
-    },
     "mainDataBase": {
       "mongoDb": {
         "host": "localhost",
-        "port": 27017,
-        "password": null,
-        "keyPrefix": "myApp",
-        "databaseUrl": "mongodb://127.0.0.1:27017/medex"
+        "keyPrefix": "myApp"
+      }
+    },
+    "secondaryDataStore": {
+      "redis": {
+        "host": "localhost",
+        "keyPrefix": "ru102js"
       }
     }
 }

@@ -8,9 +8,8 @@ const config = require('better-config');
  */
  const loadMongoDao = (daoName, daoFolder) => {
     const currentDataBase = config.get('application.mainDataBase');
-    // console.log(`./impl/${currentDataBase}/${daoFolder}/${daoName}_dao_${currentDataBase}_impl`);
     return require(`./impl/${currentDataBase}/${daoFolder}/${daoName}_dao_${currentDataBase}_impl`);
-    require('./impl/mongoDb/subUser/subUser_dao_mongoDb_impl')
+
   };
 
 module.exports = {
