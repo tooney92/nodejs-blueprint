@@ -12,9 +12,9 @@ auth requirement
 * [Npm Packages](#npm-packages)
 * [Folder Structure](#folder-structure)
 * [Setup](#setup)
-* [Credit](#credit)
 * [File Naming Convention](#file-naming-convention)
 * [Annoncements](#annoncements)
+* [Credit](#credit)
 
 
 ## General info
@@ -52,10 +52,17 @@ Project is created with:
 
 ## Folder Structure
 
-Preview the link to the folder structure with this link: https://www.figma.com/file/dARqutlGSUljTwUDETKCGe/folder-struture-medex?node-id=0%3A1
+Preview the [folder structure](https://www.figma.com/file/dARqutlGSUljTwUDETKCGe/nodejs-blue-print?node-id=0%3A1). I used figma to design the structure.  
 	
 ## Setup
-To run this project, install it locally using npm:
+
+* initial setup: 
+   * ensure you have mongodb setup on your system. MongoDB is the default DBMS used for this blue print. You can however use other DBMS. The bluelprint is designed to allow you use any DB of your choice so long as you have the implimentations in the 
+   * create a DB called ```sampleDB```. This is required because in the ```.env``` file, we have the database connection string pointing to ```sampleDB``` as the initial DB. You of course change this to any DB name.  
+   
+* step 1: clone the repo.
+* step 2: navigate to the directory and run ```npm i``` from your terminal.
+* step 3: run ```npm run dev``` to start your application. The default port will be 3000. 
 
 ## File Naming Convention
 
