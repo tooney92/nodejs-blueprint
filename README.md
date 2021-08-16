@@ -14,6 +14,7 @@ auth requirement
 * [Setup](#setup)
 * [Credit](#credit)
 * [File Naming Convention](#file-naming-convention)
+* [Annoncements](#annoncements)
 
 
 ## General info
@@ -23,16 +24,38 @@ This blueprint implements the Data Access Object design pattern which abstracts 
 	
 ## Technologies
 Project is created with:
-* Lorem version: 12.3
-* Ipsum version: 2.33
-* Ament library version: 999
+* nodejs
+* expressjs
+* mongoDB
 
 ## Npm Packages
+
+### The npm packages found in this code are grouped below:
+
+* security:
+    * dotenv:
+    * helmet:
+    * jsonwebtoken:
+    * uuid
+    * cors
+    
+* utilities:
+    * lodash
+    * express
+    * cors
+
+* logging:
+   * winston
+   * winston-daily-rotate-file
+   * morgan
+    
+
+## Folder Structure
+
+Preview the link to the folder structure with this link: https://www.figma.com/file/dARqutlGSUljTwUDETKCGe/folder-struture-medex?node-id=0%3A1
 	
 ## Setup
 To run this project, install it locally using npm:
-
-## Folder Structure
 
 ## File Naming Convention
 
