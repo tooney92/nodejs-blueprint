@@ -1,7 +1,7 @@
 const { Validator } = require("node-input-validator");
 const {vErrorsMessageFormatter} = require("../../helpers/vErrorMessageFormatter");
-console.log(vErrorsMessageFormatter);
 
+//validation for the create route
 module.exports.create = async (req, res, next) => {
   const v = new Validator(req.body, {
     userName: "required",
@@ -15,7 +15,7 @@ module.exports.create = async (req, res, next) => {
   next();
 };
 
-
+//validation for the login route
 module.exports.login = async (req, res, next) => {
   const v = new Validator(req.body, {
     email: "required",

@@ -2,7 +2,7 @@ const jwt = require("jsonwebtoken");
 /**
  * create a token.
  *
- * @param {Object} info - the data to encrypted by JWT.
+ * @param {Object} info - the data to be encrypted by JWT.
  * @param {String} tokenSecret - the token secret to be used by JWT.
  * @param {Integer} expiration - the token expiration time calculated in milliseconds. 
  * @returns {Promise} - a Promise, resolving to the token.

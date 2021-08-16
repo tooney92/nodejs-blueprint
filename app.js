@@ -12,12 +12,15 @@ const routes = require('./src/routes')
 const port = process.env.PORT || 3000;
 
 
-config.set('./config.json');
 app.use(express.static(path.join(__dirname, "public")));
 app.use(express.urlencoded({extended: false}));
 app.use(express.json());
 app.use(cors());
+
+// dynamically prepends "/api" to your routes.
 app.use('/api', routes)
+
+config.set('./config.json');
   
 
 // mongoDB server connection
